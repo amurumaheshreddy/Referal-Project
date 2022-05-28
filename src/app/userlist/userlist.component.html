@@ -1,0 +1,23 @@
+<p>{{name}}</p>
+
+<table class="table table-striped">
+    <thead>
+        <th>userid</th>
+        <th>username</th>
+        <th>usercity</th>
+        
+    </thead>
+    <tbody>
+        <tr *ngFor="let use of users">
+        <td>{{use.user_id}}</td>
+        <td>{{use.user_name}}</td>
+        <td>{{use.user_city}}</td>
+
+        <td><button type="submit" class="btn btn-primary"   (click)="deleted(use.user_id)" routerLink="/users">Delete</button></td>
+        <td> <button type="submit" class="btn btn-primary"  routerLink="/update">Update</button></td>
+        <td><button type="submit" class="btn btn-primary"   (click)="view(use.user_id)" >View</button></td>
+  
+    </tr>
+
+    </tbody>
+</table>

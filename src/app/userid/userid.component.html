@@ -1,0 +1,9 @@
+<p>userid works!</p>
+<form>
+    <div class="form-group">
+      <label for="exampleInputEmail1">userid</label>
+      <input type="text" class="form-control" id="user_id" aria-describedby="emailHelp" [(ngModel)]="user.user_id"  [ngModelOptions]="{standalone: true}">
+      <button type="submit" class="btn btn-primary"   (click)="view(user.user_id)">ViewByID</button>
+    </div>
+    </form>
+    <div>{{user.user_id}}</div>
